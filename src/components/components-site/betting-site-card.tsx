@@ -8,6 +8,8 @@ import type { BettingSite } from "./types"
 interface SiteCardProps {
   site: BettingSite
   rank: number
+  /** Slot score for this rank; branding may come from a shuffled site. */
+  displayRating?: number
   isGoldenHighlight?: boolean
 }
 
@@ -51,8 +53,9 @@ const StarRating = ({
   )
 }
 
-export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteCardProps) {
+export function BettingSiteCard({ site, rank, displayRating, isGoldenHighlight = false }: SiteCardProps) {
   const [isMobile, setIsMobile] = useState(false)
+  const rating = displayRating ?? site.rating
 
   useEffect(() => {
     const checkMobile = () => {
@@ -138,7 +141,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
             {/* RATING - 10% */}
             <div className="flex-[0_0_10%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div className="text-4xl font-bold leading-none mb-1" style={{ color: "#000000" }}>
-                {site.rating.toFixed(1)}
+                {rating.toFixed(1)}
               </div>
               <div className="text-xs font-bold text-gray-600">PONTSZÁM</div>
             </div>
@@ -147,7 +150,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
             <div className="flex-[0_0_18%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div className="text-xs text-gray-600 mb-2">({formatVotes(site.reviewCount)} ÉRTÉKELÉS)</div>
               <div className="flex justify-center mb-2">
-                <StarRating rating={site.rating / 2} className="w-4 h-4" />
+                <StarRating rating={rating / 2} className="w-4 h-4" />
               </div>
               <div className="text-sm text-black font-bold">KIVÁLÓ</div>
             </div>
@@ -225,7 +228,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
               {/* Score - 2 колонки */}
               <div className="col-span-2 text-center">
                 <div className="text-xl font-bold leading-none text-green-600" >
-                  {site.rating.toFixed(1)}
+                  {rating.toFixed(1)}
                 </div>
                 <div className="text-xs font-bold text-gray-600">PONTSZÁM</div>
               </div>
@@ -234,7 +237,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
               <div className="col-span-2 text-center">
                 <div className="text-xs text-gray-600 mb-1">({formatVotes(site.reviewCount)})</div>
                 <div className="flex justify-center mb-1">
-                  <StarRating rating={site.rating / 2} className="w-3 h-3" />
+                  <StarRating rating={rating / 2} className="w-3 h-3" />
                 </div>
               </div>
 
@@ -312,13 +315,13 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
             <div className="grid grid-cols-3 items-center justify-center gap-1 mt-1 pt-1 border-t-2 border-gray-200 relative z-10">
               <div className="text-center">
                 <div className="text-xl font-bold leading-none mb-1 mt-1.5 text-green-600" >
-                  {site.rating.toFixed(1)}
+                  {rating.toFixed(1)}
                 </div>
                 <div className="text-[8px] text-gray-600 font-bold">PONTSZÁM</div>
               </div>
               <div className="text-center">
                 <div className="flex justify-center mt-2 mb-1">
-                  <StarRating rating={site.rating / 2} className="w-4 h-4" />
+                  <StarRating rating={rating / 2} className="w-4 h-4" />
                 </div>
                 <div className="text-[10px] text-gray-600 font-bold">({formatVotes(site.reviewCount)})</div>
               </div>
