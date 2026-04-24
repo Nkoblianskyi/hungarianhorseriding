@@ -43,7 +43,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
                   Legjobb Fogadóirodák <span style={{ color: "#D62718" }}>Magyarországon</span>
                 </h1>
 
-                <h2 className="text-lg xl:text-xl font-medium mb-4 text-black">Szakértői Elemzés és Összehasonlítás</h2>
+                <h2 className="text-lg xl:text-xl font-medium mb-4 text-white">Szakértői Elemzés és Összehasonlítás</h2>
 
                 <div className="w-20 h-0.5 bg-[#D62718] mx-auto mb-4"></div>
 
@@ -89,7 +89,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
       <div
         className="lg:hidden mb-2 relative overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/bg-2.jpg')",
+          backgroundImage: "url('/bg-2.jpg')",
         }}
       >
         {/* Dark overlay */}
