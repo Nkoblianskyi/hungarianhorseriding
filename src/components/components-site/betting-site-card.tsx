@@ -224,7 +224,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
 
               {/* Score - 2 колонки */}
               <div className="col-span-2 text-center">
-                <div className="text-xl font-bold leading-none" style={{ color: "#000000" }}>
+                <div className="text-xl font-bold leading-none text-green-600" >
                   {site.rating.toFixed(1)}
                 </div>
                 <div className="text-xs font-bold text-gray-600">PONTSZÁM</div>
@@ -311,7 +311,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
             {/* Rating Row */}
             <div className="grid grid-cols-3 items-center justify-center gap-1 mt-1 pt-1 border-t-2 border-gray-200 relative z-10">
               <div className="text-center">
-                <div className="text-xl font-bold leading-none mb-1 mt-1.5" style={{ color: "#000000" }}>
+                <div className="text-xl font-bold leading-none mb-1 mt-1.5 text-green-600" >
                   {site.rating.toFixed(1)}
                 </div>
                 <div className="text-[8px] text-gray-600 font-bold">PONTSZÁM</div>
