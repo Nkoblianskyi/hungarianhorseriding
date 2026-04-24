@@ -325,7 +325,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
 
               {/* Button Column */}
               <div className="flex justify-center">
-                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-4 py-2 text-[10px] w-full font-bold shadow-lg">
+                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-4 py-2 text-[9px] w-full font-bold shadow-lg">
                   BÓNUSZ MEGSZERZÉSE
                 </Button>
               </div>

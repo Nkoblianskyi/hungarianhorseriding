@@ -87,22 +87,23 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
 
       {/* Tablet & Mobile Hero */}
       <div
-        className="lg:hidden mb-2 bg-cover bg-center bg-no-repeat"
+        className="lg:hidden mb-2 relative overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/images/bg-2.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
       >
-        <div className="bg-white/70 shadow-lg max-w-[1280px] mx-auto rounded-lg  pt-10 md:pt-14">
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50 pointer-events-none" />
+
+        <div className="relative shadow-lg max-w-[1280px] mx-auto pt-10 md:pt-14">
           <div className="px-4 py-4 text-center">
-            <h1 className="text-2x md:text-3xl font-bold mb-3 text-black uppercase">
+            <h1 className="text-2x md:text-3xl font-bold mb-3 text-white uppercase">
               Legjobb Fogadóirodák <span style={{ color: "#D62718" }}>Magyarországon</span> 2026
             </h1>
 
             <div className="w-16 h-0.5 bg-[#D62718] mx-auto mb-4"></div>
 
-            <p className="hidden lg:blocktext-sm md:text-xs text-black mb-4 leading-relaxed max-w-2xl mx-auto">
+            <p className="hidden lg:blocktext-sm md:text-xs text-white mb-4 leading-relaxed max-w-2xl mx-auto">
               A megbízható fogadóirodák megtalálása szakértői tudást és alapos kutatást igényel. Szerencsére részletes
               elemzésünk kiküszöböli a találgatásokat azzal, hogy pontos információkat nyújt Magyarország legjobb
               fogadóirodáiról.
@@ -110,16 +111,16 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
             {/* Trust Indicators */}
             <div className="mt-4">
               <div className="flex justify-center items-center gap-1 sm:gap-3">
-                <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
+                <div className="flex items-center gap-1 sm:gap-2 text-white px-1 sm:px-2 py-1 flex-shrink-0">
                   <Image src="/flag.png" alt="Magyarország" width={20} height={20} className="w-5 h-5" />
                   <span className="text-[10px] sm:text-xs font-bold tech-subheading">Engedélyezett HU</span>
                 </div>
-                <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
-                  <Award className="w-3 h-3 text-black" />
+                <div className="flex items-center gap-1 sm:gap-2 text-white px-1 sm:px-2 py-1 flex-shrink-0">
+                  <Award className="w-3 h-3 text-white" />
                   <span className="text-[10px] sm:text-xs font-bold tech-subheading">100% Legális</span>
                 </div>
-                <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
-                  <TrendingUp className="w-3 h-3 text-black" />
+                <div className="flex items-center gap-1 sm:gap-2 text-white px-1 sm:px-2 py-1 flex-shrink-0">
+                  <TrendingUp className="w-3 h-3 text-white" />
                   <span className="text-[10px] sm:text-xs font-bold tech-subheading">Gyors Kifizetések</span>
                 </div>
               </div>
