@@ -93,7 +93,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
         }}
       >
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/50 pointer-events-none" />
+        <div className="absolute inset-0 bg-black/70 pointer-events-none" />
 
         <div className="relative shadow-lg max-w-[1280px] mx-auto pt-10 md:pt-14">
           <div className="px-4 py-4 text-center">
