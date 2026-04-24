@@ -42,7 +42,7 @@ export function MainSiteHeader() {
                   className="w-12 h-12 border-2 border-black flex items-center justify-center"
                   style={{ backgroundColor: "#FFD700" }}
                 >
-                  <Image src="/images/logo.png" alt="Logo" width={24} height={24} className="w-8 h-8" />
+                  <Image src="/logo.png" alt="Logo" width={24} height={24} className="w-8 h-8" />
                 </div>
                 <div className="absolute -top-1 -right-1 w-3 h-3 border border-black bg-[#D62718]"></div>
                 <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-[#477050] border border-black"></div>
