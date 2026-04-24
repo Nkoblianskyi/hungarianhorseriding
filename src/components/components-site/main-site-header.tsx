@@ -13,7 +13,7 @@ export function MainSiteHeader() {
               className="w-10 h-10 border border-black flex items-center justify-center relative"
               style={{ backgroundColor: "#FFD700" }}
             >
-              <Image src="/images/logo.png" alt="Logo" width={56} height={56} className="w-8 h-8" />
+              <Image src="/logo.png" alt="Logo" width={56} height={56} className="w-8 h-8" />
             </div>
             <div className="text-center">
               <h1 className="text-base font-bold leading-tight">

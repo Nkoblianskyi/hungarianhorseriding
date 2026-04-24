@@ -13,7 +13,7 @@ export function PageLayoutWrapper({ children }: PageLayoutWrapperProps) {
     <div
       className="min-h-screen relative"
       style={{
-        backgroundImage: "url(/images/bg-2.jpg)",
+        backgroundImage: "url(/bg-2.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
