@@ -34,7 +34,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
     <>
       {/* Desktop Hero */}
       <div className="hidden lg:block relative overflow-hidden mb-6">
-        <div className="bg-white/70 shadow-lg max-w-[1280px] mx-auto rounded-lg">
+        <div className="bg-black/50 shadow-lg max-w-[1280px] mx-auto rounded-lg">
           <div className="relative px-8 py-8">
             <div className="relative z-10 text-center">
               {/* Main Heading */}
