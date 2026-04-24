@@ -39,15 +39,15 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
             <div className="relative z-10 text-center">
               {/* Main Heading */}
               <div className="mb-6">
-                <h1 className="text-3xl xl:text-4xl font-bold mb-3 leading-tight text-black uppercase">
-                  Legjobb Fogadóirodák <span style={{ color: "#D62718" }}>Magyarországon</span> 2026
+                <h1 className="text-3xl xl:text-4xl font-bold mb-3 leading-tight text-white uppercase">
+                  Legjobb Fogadóirodák <span style={{ color: "#D62718" }}>Magyarországon</span>
                 </h1>
 
                 <h2 className="text-lg xl:text-xl font-medium mb-4 text-black">Szakértői Elemzés és Összehasonlítás</h2>
 
                 <div className="w-20 h-0.5 bg-[#D62718] mx-auto mb-4"></div>
 
-                <p className="hidden lg:block text-base text-black max-w-3xl mx-auto leading-relaxed mb-4">
+                <p className="hidden lg:block text-base text-white max-w-3xl mx-auto leading-relaxed mb-4">
                   A megbízható fogadóirodák megtalálása szakértői tudást és alapos kutatást igényel. Szerencsére
                   részletes elemzésünk kiküszöböli a találgatásokat azzal, hogy pontos információkat nyújt Magyarország
                   legjobb fogadóirodáiról.
@@ -56,16 +56,16 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
                 {/* Trust Indicators */}
                 <div className="mt-8">
                   <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-6">
-                    <div className="flex items-center gap-2 text-black px-3 py-2">
+                    <div className="flex items-center gap-2 text-white px-3 py-2">
                       <Image src="/flag.png" alt="Magyarország" width={24} height={24} className="w-6 h-6" />
                       <span className="text-sm font-bold tech-subheading">100% Legális</span>
                     </div>
-                    <div className="flex items-center gap-2 text-black px-3 py-2">
-                      <Award className="w-4 h-4 text-black" />
+                    <div className="flex items-center gap-2 text-white px-3 py-2">
+                      <Award className="w-4 h-4 text-white" />
                       <span className="text-sm font-bold tech-subheading">Magas Bónuszok</span>
                     </div>
-                    <div className="flex items-center gap-2 text-black px-3 py-2">
-                      <TrendingUp className="w-4 h-4 text-black" />
+                    <div className="flex items-center gap-2 text-white px-3 py-2">
+                      <TrendingUp className="w-4 h-4 text-white" />
                       <span className="text-sm font-bold tech-subheading">Gyors Kifizetések</span>
                     </div>
                   </div>
