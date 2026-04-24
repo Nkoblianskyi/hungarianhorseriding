@@ -98,7 +98,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
             : {}),
         }}
       >
-        <Link href={site.link} target="_blank" rel="noopener referrer" className="block">
+        <Link href={site.url} target="_blank" rel="noopener referrer" className="block">
           {/* Main Content */}
           <div className="h-40 flex items-center py-6 px-6 bg-white relative">
             {/* PLATFORM - 22% */}
@@ -131,7 +131,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
                 {site.bonus}
               </div>
               <div className="font-bold text-black" style={{ fontSize: "16px" }}>
-                {site.welcomeOffer}
+                {site.dopbonus}
               </div>
             </div>
 
@@ -145,7 +145,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
 
             {/* USER SCORE - 18% */}
             <div className="flex-[0_0_18%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-xs text-gray-600 mb-2">({formatVotes(site.votes)} ÉRTÉKELÉS)</div>
+              <div className="text-xs text-gray-600 mb-2">({formatVotes(site.reviewCount)} ÉRTÉKELÉS)</div>
               <div className="flex justify-center mb-2">
                 <StarRating rating={site.rating / 2} className="w-4 h-4" />
               </div>
@@ -186,7 +186,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
             : {}),
         }}
       >
-        <Link href={site.link} target="_blank" rel="noopener referrer" className="block">
+        <Link href={site.url} target="_blank" rel="noopener referrer" className="block">
           <div className="pt-6 pb-4 bg-white relative">
             <div className="absolute top-0 left-0 flex z-30" style={{ margin: 0, padding: 0 }}>
               {rank <= 3 && (
@@ -218,7 +218,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
                   {site.bonus}
                 </div>
                 <div className="font-bold text-black" style={{ fontSize: "13px" }}>
-                  {site.welcomeOffer}
+                  {site.dopbonus}
                 </div>
               </div>
 
@@ -232,7 +232,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
 
               {/* Rating - 2 колонки */}
               <div className="col-span-2 text-center">
-                <div className="text-xs text-gray-600 mb-1">({formatVotes(site.votes)})</div>
+                <div className="text-xs text-gray-600 mb-1">({formatVotes(site.reviewCount)})</div>
                 <div className="flex justify-center mb-1">
                   <StarRating rating={site.rating / 2} className="w-3 h-3" />
                 </div>
@@ -263,7 +263,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
             : {}),
         }}
       >
-        <Link href={site.link} target="_blank" rel="noopener referrer" className="block">
+        <Link href={site.url} target="_blank" rel="noopener referrer" className="block">
           {/* Main Content */}
           <div className="p-2 relative bg-white">
             {/* Badges */}
@@ -303,7 +303,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
                   {site.bonus}
                 </div>
                 <div className="font-bold text-black leading-tight" style={{ fontSize: "16px" }}>
-                  {site.welcomeOffer}
+                  {site.dopbonus}
                 </div>
               </div>
             </div>
@@ -320,7 +320,7 @@ export function BettingSiteCard({ site, rank, isGoldenHighlight = false }: SiteC
                 <div className="flex justify-center mt-2 mb-1">
                   <StarRating rating={site.rating / 2} className="w-4 h-4" />
                 </div>
-                <div className="text-[10px] text-gray-600 font-bold">({formatVotes(site.votes)})</div>
+                <div className="text-[10px] text-gray-600 font-bold">({formatVotes(site.reviewCount)})</div>
               </div>
 
               {/* Button Column */}

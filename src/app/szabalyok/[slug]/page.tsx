@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { disciplinesData } from '@/lib/data'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -33,6 +36,7 @@ export default async function DisciplineDetailPage({ params }: Props) {
 
   return (
     <>
+      <Navbar />
       {/* Header */}
       <div className="relative h-72 lg:h-[420px] flex items-end">
         <div className="absolute inset-0">
@@ -138,6 +142,8 @@ export default async function DisciplineDetailPage({ params }: Props) {
           )}
         </div>
       </nav>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

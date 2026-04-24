@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { blogData } from '@/lib/data'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -33,6 +36,7 @@ export default async function BlogArticlePage({ params }: Props) {
 
   return (
     <>
+      <Navbar />
       {/* Header */}
       <div className="relative h-72 lg:h-[480px] flex items-end">
         <div className="absolute inset-0">
@@ -142,6 +146,8 @@ export default async function BlogArticlePage({ params }: Props) {
           Vissza a blogra
         </Link>
       </div>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

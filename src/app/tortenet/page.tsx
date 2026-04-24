@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { PageHero } from '@/components/page-hero'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 export const metadata: Metadata = {
   title: 'A Magyar Lovaglás Története | Hungarian Horse Riding',
@@ -61,6 +64,7 @@ const timeline = [
 export default function TortenetPage() {
   return (
     <>
+      <Navbar />
       <PageHero
         label="Történet"
         title="A Magyar Lovaglás Története"
@@ -120,6 +124,8 @@ export default function TortenetPage() {
           <span className="block w-12 h-px bg-accent mx-auto mt-8" />
         </div>
       </section>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

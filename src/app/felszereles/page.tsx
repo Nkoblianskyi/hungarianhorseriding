@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { PageHero } from '@/components/page-hero'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 export const metadata: Metadata = {
   title: 'Felszerelés és Öltözet | Hungarian Horse Riding',
@@ -125,6 +128,7 @@ const equipment = [
 export default function FelszerelesPage() {
   return (
     <>
+      <Navbar />
       <PageHero
         label="Felszerelés"
         title="Felszerelés és Öltözet"
@@ -194,6 +198,8 @@ export default function FelszerelesPage() {
           </div>
         </div>
       </section>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

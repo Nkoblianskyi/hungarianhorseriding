@@ -1,9 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
-import { Navbar } from '@/components/navbar'
-import { Footer } from '@/components/footer'
-import { CookieBanner } from '@/components/cookie-banner'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -70,10 +67,7 @@ export default function RootLayout({
       className={`${cormorant.variable} ${inter.variable} bg-background`}
     >
       <body className="font-sans antialiased min-h-screen flex flex-col">
-        <Navbar />
         <main className="flex-1">{children}</main>
-        <Footer />
-        <CookieBanner />
       </body>
     </html>
   )

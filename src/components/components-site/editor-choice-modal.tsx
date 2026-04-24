@@ -151,12 +151,12 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
               <div className="flex-1 flex flex-col justify-center mb-4">
                 <div className="text-sm text-black font-medium mb-2">ÜDVÖZLŐ BÓNUSZ</div>
                 <div className="text-3xl font-black text-black tracking-wider leading-tight mb-2">{topSite.bonus}</div>
-                <div className="text-xl font-bold leading-tight text-black">{topSite.welcomeOffer}</div>
+                <div className="text-xl font-bold leading-tight text-black">{topSite.dopbonus}</div>
               </div>
 
               {/* CTA Button */}
               <div>
-                <Link href={topSite.link || "#"} target="_blank" rel="noopener referrer">
+                <Link href={topSite.url || "#"} target="_blank" rel="noopener referrer">
                   <Button
                     className="bg-green-600 hover:bg-green-700 text-white font-bold border-2 border-green-800 py-3 px-6 text-base w-full transition-all duration-300 hover:scale-105 shadow-md"
                     onClick={() => setIsOpen(false)}

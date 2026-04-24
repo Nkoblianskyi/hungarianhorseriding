@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { PageHero } from '@/components/page-hero'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 import { cn } from '@/lib/utils'
 
 type FormState = 'idle' | 'loading' | 'success' | 'error'
@@ -46,6 +49,7 @@ export default function RolunkPage() {
 
   return (
     <>
+      <Navbar />
       <PageHero
         label="Rólunk"
         title="Kik Vagyunk"
@@ -317,6 +321,8 @@ export default function RolunkPage() {
           </div>
         </div>
       )}
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

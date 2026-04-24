@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 const sections = [
   {
@@ -57,6 +60,7 @@ const sections = [
 export default function HomePage() {
   return (
     <>
+      <Navbar />
       {/* ─── HERO ─────────────────────────────────────────────────────── */}
       <section
         className="relative w-full min-h-screen overflow-hidden"
@@ -295,6 +299,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

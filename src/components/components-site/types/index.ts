@@ -2,15 +2,17 @@ export interface BettingSite {
   id: number
   name: string
   logo: string
-  rating: number
+  category: string
   bonus: string
+  dopbonus?: string
+  rating: number
+  reviewCount: number
+  url: string
+  featured?: boolean
   description?: string
   features?: string[]
-  welcomeOffer?: string
   terms?: string
   userRating?: number
-  votes: number
-  link: string
   backgroundImage?: string
 }
 

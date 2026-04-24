@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
 import { PageHero } from '@/components/page-hero'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 export const metadata: Metadata = {
   title: 'Cookie Szabályzat | Hungarian Horse Riding',
@@ -19,6 +22,7 @@ function UpdatedDate() {
 export default function CookiePolicyPage() {
   return (
     <>
+      <Navbar />
       <PageHero
         label="Jogi dokumentum"
         title="Cookie Szabályzat"
@@ -93,6 +97,8 @@ export default function CookiePolicyPage() {
           ))}
         </div>
       </article>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

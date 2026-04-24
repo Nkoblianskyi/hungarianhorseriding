@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { PageHero } from '@/components/page-hero'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 export const metadata: Metadata = {
   title: 'Lovaglástechnika | Hungarian Horse Riding',
@@ -75,6 +78,7 @@ const postureSections = [
 export default function TechnikaPage() {
   return (
     <>
+      <Navbar />
       <PageHero
         label="Technika"
         title="Lovaglástechnika és Tippek"
@@ -201,6 +205,8 @@ export default function TechnikaPage() {
           </p>
         </div>
       </section>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

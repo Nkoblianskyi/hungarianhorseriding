@@ -145,13 +145,13 @@ export function TopSitesModal({ bettingSites, casinoSites }: Top3ModalProps) {
                       {site?.bonus}
                     </div>
                     <div className={`${isCenter ? "text-base md:text-base" : "text-sm md:text-base"} font-semibold`}>
-                      {site?.welcomeOffer}
+                      {site?.dopbonus}
                     </div>
                   </div>
 
                   {/* Button */}
                   <div className="mb-3">
-                    <Link href={site?.link || "#"} target="_blank" rel="noopener referrer">
+                    <Link href={site?.url || "#"} target="_blank" rel="noopener referrer">
                       <Button className="bg-yellow-400 hover:bg-yellow-500 text-black py-2 md:py-2.5 px-3 md:px-4 text-xs md:text-sm w-full font-bold">
                         FÁ BÓNUS
                       </Button>

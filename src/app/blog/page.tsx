@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { blogData } from '@/lib/data'
 import { PageHero } from '@/components/page-hero'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 export const metadata: Metadata = {
   title: 'Blog és Cikkek | Hungarian Horse Riding',
@@ -12,6 +15,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
+      <Navbar />
       <PageHero
         label="Blog"
         title="Cikkek és Írások"
@@ -96,6 +100,8 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }

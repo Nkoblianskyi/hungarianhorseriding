@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { disciplinesData } from '@/lib/data'
 import { PageHero } from '@/components/page-hero'
+import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 export const metadata: Metadata = {
   title: 'Szabályok és Diszciplínák | Hungarian Horse Riding',
@@ -11,6 +14,7 @@ export const metadata: Metadata = {
 export default function SzabalyokPage() {
   return (
     <>
+      <Navbar />
       <PageHero
         label="Diszciplínák"
         title={"Szabályok és Versenydiszciplínák"}
@@ -78,6 +82,8 @@ export default function SzabalyokPage() {
           </div>
         </div>
       </section>
+      <Footer />
+      <CookieBanner />
     </>
   )
 }
