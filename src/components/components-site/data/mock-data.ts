@@ -22,7 +22,7 @@ export const bettingSites: BettingSite[] = [
     dopbonus: "+ 100% akár 200 USDT",
     rating: 9.7,
     reviewCount: 5279,
-    url: "https://qualityboost.top/jvRDZtB2",
+    url: "https://qualityboost.top/sNbyNtZH",
     featured: true,
   },
   {
